@@ -1,2 +1,2 @@
 # pr-checks-test 45
-test 2
+test 3
