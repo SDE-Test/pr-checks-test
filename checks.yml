@@ -1,0 +1,20 @@
+checks:
+  - name: "E2E Tests"
+    project: "O11y"
+    build: "main"
+    repository: "org/repo-name"
+    check_type: "cypress"
+    conditions:
+      required: true
+      branch: "main"
+    o11y_url: "https://o11y-url.com"
+  
+  - name: "Unit Tests"
+    project: "O11y"
+    build: "main"
+    repository: "org/repo-name"
+    check_type: "jest"
+    conditions:
+      required: false
+      branch: "develop"
+    o11y_url: "https://o11y-url.com"
